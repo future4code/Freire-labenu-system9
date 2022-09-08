@@ -10,8 +10,8 @@ const createTableEstudantes = () => connection.raw(`
          turma_id VARCHAR(255) FOREING KEY NOT NULL         
       );
    `)
-    .then(() => { console.log("Tabela criada") })
-    .catch(printError)
+   .then(() => { console.log("Tabela criada") })
+   .catch(printError)
 
 const createTableTurma = () => connection.raw(`
    CREATE TABLE IF NOT EXISTS turma (
@@ -20,10 +20,10 @@ const createTableTurma = () => connection.raw(`
       modulo VARCHAR(255) DEFAULT 0        
    );
 `)
-    .then(() => { console.log("Tabela criada") })
-    .catch(printError)
+   .then(() => { console.log("Tabela criada") })
+   .catch(printError)
 
-    const createTableDocente = () => connection.raw(`
+const createTableDocente = () => connection.raw(`
     CREATE TABLE IF NOT EXISTS docente (
        id VARCHAR(255) PRIMARY KEY,
        nome VARCHAR(255),
@@ -32,11 +32,11 @@ const createTableTurma = () => connection.raw(`
        turma_id VARCHAR(255) FOREING KEY NOT NULL            
     );
  `)
-     .then(() => { console.log("Tabela criada") })
-     .catch(printError)    
+   .then(() => { console.log("Tabela criada") })
+   .catch(printError)
 
 const closeConnection = () => { connection.destroy() }
 
 createTableEstudantes()
-    .then(() => console.log("Banco pronto!"))
-    .finally(closeConnection)
+   .then(() => console.log("Banco pronto!"))
+   .finally(closeConnection)
