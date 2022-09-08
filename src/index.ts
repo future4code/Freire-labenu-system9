@@ -1,9 +1,10 @@
 import { AddressInfo } from "net";
 import app from "./app";
+import { addTurma } from "./endpoints/criarTurma";
 
 
 
-
+app.post("/turmas", addTurma)
 
 
 
