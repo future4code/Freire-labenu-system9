@@ -7,7 +7,8 @@ const createTableEstudantes = () => connection.raw(`
          nome VARCHAR(255) NOT NULL,
          email VARCHAR(255) NOT NULL UNIQUE,
          data_nasc DATE NOT NULL,
-         turma_id VARCHAR(255) FOREING KEY NOT NULL         
+         turma_id VARCHAR(255) NOT NULL,
+         FOREIGN KEY (turma_id) REFERENCES turma(id)          
       );
    `)
    .then(() => { console.log("Tabela criada") })
@@ -29,7 +30,8 @@ const createTableDocente = () => connection.raw(`
        nome VARCHAR(255),
        email VARCHAR(255) NOT NULL UNIQUE,       
        data_nasc DATE NOT NULL,
-       turma_id VARCHAR(255) FOREING KEY NOT NULL            
+       turma_id VARCHAR(255),
+       FOREIGN KEY (turma_id) REFERENCES turma(id)             
     );
  `)
    .then(() => { console.log("Tabela criada") })
