@@ -4,7 +4,7 @@ export default async function insertDocente(docente: any) {
 
     const {id, nome, email, data_nasc, turma_id} = docente    
 
-    await connection(`estudante`).insert({
+    await connection(`docente`).insert({
         id,
         nome,
         email,
