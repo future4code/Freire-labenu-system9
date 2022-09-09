@@ -10,7 +10,6 @@ export const mudarEstudante = async (req: Request, res: Response) => {
             id_turma,
             id
         }
-
         await AtualizarTurmaEstudante(estudanteAtual)
         res.status(200).send("Estudante modificada com sucesso!")
 
@@ -18,3 +17,5 @@ export const mudarEstudante = async (req: Request, res: Response) => {
         res.status(500).send(error.message)        
     }
 }
+
+

@@ -10,7 +10,6 @@ export const mudarDocente = async (req: Request, res: Response) => {
             id_turma,
             id
         }
-
         await AtualizarTurmaDocente(docenteAtual)
         res.status(200).send("Docente modificada com sucesso!")
 
