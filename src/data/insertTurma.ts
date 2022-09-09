@@ -10,3 +10,4 @@ export default async function insertTurma(turma: any) {
         modulo       
     })
 }
+
