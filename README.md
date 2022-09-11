@@ -43,3 +43,36 @@ Representa estudantes da nossa instituição. Possuir uma, e somente uma turma. 
 - id: identificador único gerado pela própria aplicação
 - nome: nome da pessoa
 - email: email da pessoa
+- data_nasc: data de nascimento no formato DD/MM/AAAA (exemplo: 21/03/1999)
+- turma_id: id ou nome da turma da pessoa existir na tabela de turmas
+
+## 👨‍🏫 Docente
+Representa docentes da nossa instituição. Cada docente deve possuir uma, e somente uma turma por vez. Docentes com cadastro novo começam sem alocação em nenhuma turma.
+
+* Possuir:
+
+- id: identificador único gerado pela própria aplicação
+- nome: nome da pessoa
+- email: email da pessoa
+- data_nasc: data de nascimento no formato DD/MM/AAAA exemplo: "21/03/1999"
+- turma_id: id ou nome da turma que essa pessoa é responsável existir na tabela de turmas
+
+## 🚀 Tecnologias/Tools
+- Nodejs
+- Express/Cors
+- MySQL - banco relacional
+- Typescript
+- Heroku;
+- Postman
+- NPM
+
+## 💻 Desenvolvedores 
+
+
+<div align="center">  
+
+| [<img src="https://user-images.githubusercontent.com/60453269/184236315-92017e73-39ae-4e8e-8a4b-3e7033bc4eb4.jpg" width=150><br><sub> Maycon Coutinho </sub>](https://www.linkedin.com/in/maycon-coutinho/) | [<img src="https://avatars.githubusercontent.com/u/104532161?v=4" width=150><br><sub> Marcia de Paula Mello </sub>](https://www.linkedin.com/in/m%C3%A1rcia-de-paula-mello-6347a61bb/) | [<img src="https://avatars.githubusercontent.com/u/104574298?v=4" width=150><br><sub> Leonardo Almeida  </sub>](https://www.linkedin.com/in/leonardo-almeida-viana/) | 
+|---|---|---|
+
+</div>
+
