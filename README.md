@@ -8,12 +8,12 @@
 
 ## ✨ Sobre
 Essa API foi desenvolvida para representar a dinâmica básica de
-qualquer escola . Aqui será encontrado três entidades
+qualquer escola. Aqui será encontrado três entidades
 fundamentais para o bom funcionamento de uma escola:
 estudantes, corpo docente e turmas. As funcionalidades básicas
 encontradas nessa API são: criar estudante, criar docente,
 criar turma, adicionar estudante na turma e adicionar docente
-na turma e também é possível mudar o aluno e professore de turma.
+na turma e também é possível mudar o aluno, professor e turma.
 ﾠ
 ## 🚩 As funcionalidades básicas são:
 - → Criar turma
